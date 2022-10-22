@@ -1,1 +1,50 @@
+class Governor {
+  static pardon(){
+        console.log('pardon')
+  }
+  
+  static orders(){
+    console.log('emergency order')
+  }
+  static takeTaxes(){
+    console.log('take taxes')
+  }
+}
+Governor.pardon()
+Governor.orders()
+Governor.takeTaxes()
 
+class Person {
+    constructor(party, county, legalAge){
+this.party = party;
+this.county = county;
+this.legalAge = legalAge;
+    }
+    static vote(name){
+      console.log(name, " voted in this years election")
+      }
+      static drive(){
+        console.log('I can drive a manual.')
+      }
+      static reside(){
+        console.log("I live in Arapahoe County.")
+      }
+    }
+
+    class PostalWorker extends Person {
+      deliversMail(){
+        console.log('I can handle dogs!')
+      }
+      drivesMailVan(){
+        console.log('I like driving in the passenger seat');
+    }
+  }
+   class Chef extends Person{
+    cook(){
+      console.log('I am a gourmet')
+    }
+    winMasterChef(){
+      console.log('Watch out Bobby Flay!')
+   } 
+  }
+  
